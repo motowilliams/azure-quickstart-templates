@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "networkInterfaceName": {
+      "value": "nivm001"
+    },
+    "privateIPAllocationMethod": {
+      "value": "Dynamic"
+    },
+    "publicIPAllocationMethod": {
+      "value": "Dynamic"
+    },
+    "virtualMachineName": {
+      "value": "vm001"
+    },
+    "adminUsername": {
+      "value": "vm001admin"
+    },
+    "adminPassword": {
+      "value": "VmH#7GsD4M4G&pKV2"
+    },
+    "sqlAdministratorLogin": {
+      "value": "sqladmin"
+    },
+    "sqlAdministratorPassword": {
+      "value": "VmH#7Gs@D4M4G&pKV2"
+    },
+    "storageAccountType": {
+      "value": "Premium_LRS"
+    },
+    "vm001StorageAccountContainerName": {
+      "value": "vhds"
+    },
+    "ServerSetupUpdateTagVersion": {
+      "value": "1.0"
+    }
+  }
+}

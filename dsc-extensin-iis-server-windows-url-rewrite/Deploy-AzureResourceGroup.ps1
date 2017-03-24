@@ -10,7 +10,7 @@ Param(
     [string] $StorageContainerName = $ResourceGroupName.ToLowerInvariant() + '-stageartifacts',
     [string] $TemplateFile = 'azuredeploy.json',
     [string] $TemplateParametersFile = 'azuredeploy.parameters.json',
-    [Parameter(Mandatory = $true)][ValidateNotNullOrEmpty()]
+    [Parameter(Mandatory = $false)][ValidateNotNullOrEmpty()]
     [ValidateSet('Incremental','Complete')]
     [string] $DeploymentMode = 'Incremental',
     [string] $ArtifactStagingDirectory = '.',
